@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "homepage": "https://gitname.github.io/react-gh-pages",
   "description": "first portfolio repository",
   "main": "index.js",
   "dependencies": {
@@ -16,6 +17,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -36,7 +39,6 @@
   "bugs": {
     "url": "https://github.com/Blessing94/portfolio/issues"
   },
-  "homepage": "",
   "browserslist": {
     "production": [
       ">0.2%",
